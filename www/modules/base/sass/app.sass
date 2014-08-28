@@ -1,0 +1,19 @@
+@import foundation
+
+[ui-view]
+    :-webkit-transition all 0.3s ease-in-out
+    :-moz-transition all 0.3s ease-in-out
+    :-o-transition all 0.3s ease-in-out
+    :transition all 0.3s ease-in-out
+
+[ui-view].ng-enter
+    :opacity 0
+
+[ui-view].ng-enter-active
+    :opacity 1
+
+[ui-view].ng-leave
+    :display none
+
+[ui-view].ng-leave-active
+    :display none

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <script>
+        document.write('<base href="' + document.location + '" />');
+    </script>
+    <meta charset="UTF-8">
+    <title>My Angular Site</title>
+
+    <link rel="stylesheet" href="assets/build/css/app.css" />
+
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="lib/angular-animate/angular-animate.js"></script>
+
+    <script src="assets/build/js/app.js"></script>
+
+</head>
+<body ng-app="my_app">
+    <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+            <!-- title section of nav bar -->
+            <li class="name">
+                <h1>
+                    <a ui-sref="main">
+                        My Angular Site
+                    </a>
+                </h1>
+            </li>
+        </ul>
+        <section class="top-bar-section">
+            <ul class="right">
+                <!-- Right hand section of nav bar -->
+            </ul>
+        </section>
+    </nav>
+
+    <!-- ui-router states are rendered into this tag -->
+    <ui-view></ui-view>
+</body>
+</html>
